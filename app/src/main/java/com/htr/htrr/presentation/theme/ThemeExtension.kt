@@ -1,24 +1,35 @@
 package com.htr.htrr.presentation.theme
 
+import androidx.compose.foundation.isSystemInDarkTheme
+import androidx.compose.material3.ColorScheme
 import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.Typography
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.graphics.Color
 
-object ThemeExtension {
-    val primary: Color
-        @Composable get() = MaterialTheme.colorScheme.primary
+val colorScheme: ColorScheme
+    @Composable get() = MaterialTheme.colorScheme
+val typography: Typography
+    @Composable get() = MaterialTheme.typography
 
-    val secondary: Color
-        @Composable get() = MaterialTheme.colorScheme.secondary
+val ColorScheme.accent: Color
+    @Composable get() = if (isSystemInDarkTheme()) AccentGradientStart else AccentGradientEnd
 
-    val background: Color
-        @Composable get() = MaterialTheme.colorScheme.background
+val ColorScheme.highlight: Color
+    @Composable get() = HighlightColor
 
-    val textPrimary: Color
-        @Composable get() = MaterialTheme.colorScheme.onBackground
+val ColorScheme.success: Color
+    @Composable get() = SuccessColor
 
-    val textSecondary: Color
-        @Composable get() = MaterialTheme.colorScheme.onSurfaceVariant
+val ColorScheme.warning: Color
+    @Composable get() = WarningColor
 
-
+// Custom gradient colors
+@Composable
+fun getGradientColors(): List<Color> {
+    return if (isSystemInDarkTheme()) {
+        listOf(DarkPrimary, DarkSecondary, DarkTertiary)
+    } else {
+        listOf(LightPrimary, LightSecondary, LightTertiary)
+    }
 }

@@ -8,6 +8,7 @@ import androidx.navigation.compose.rememberNavController
 import androidx.navigation.navArgument
 import com.htr.htrr.presentation.screen.DetailScreen
 import com.htr.htrr.presentation.screen.HomeScreen
+import com.htr.htrr.presentation.screen.SplashScreen
 
 @Composable
 fun MainNavigation() {
@@ -15,8 +16,20 @@ fun MainNavigation() {
 
     NavHost(
         navController = navController,
-        startDestination = NavRoutes.HomeRoute.route
+        startDestination = NavRoutes.SplashScreen.route
     ) {
+        composable(
+            route = NavRoutes.SplashScreen.route,
+        ) {
+            SplashScreen(
+                onNavigateToMain = {
+                    navController.navigate(NavRoutes.HomeRoute.route) {
+                        popUpTo(NavRoutes.SplashScreen.route) { inclusive = true }
+                    }
+                }
+            )
+        }
+
         composable(
             route = NavRoutes.HomeRoute.route,
         ) { _ -> HomeScreen() }
