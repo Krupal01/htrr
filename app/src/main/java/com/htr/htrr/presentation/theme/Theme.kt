@@ -1,6 +1,5 @@
 package com.htr.htrr.presentation.theme
 
-import android.app.Activity
 import android.os.Build
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.material3.MaterialTheme
@@ -12,38 +11,38 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.platform.LocalContext
 
 private val LightColorScheme = lightColorScheme(
-    primary = LightPrimary,
-    onPrimary = LightOnPrimary,
-    primaryContainer = LightPrimaryContainer,
-    onPrimaryContainer = LightOnPrimaryContainer,
+    primary = ElectricBlue,
+    onPrimary = PureWhite,
+    primaryContainer = VeryLightBlue,
+    onPrimaryContainer = VeryLightBlue,
 
-    secondary = LightSecondary,
-    onSecondary = LightOnSecondary,
-    secondaryContainer = LightSecondaryContainer,
-    onSecondaryContainer = LightOnSecondaryContainer,
+    secondary = CyberPurple,
+    onSecondary = PureWhite,
+    secondaryContainer = VeryLightPurple,
+    onSecondaryContainer = DeepPurple,
 
-    tertiary = LightTertiary,
-    onTertiary = LightOnTertiary,
-    tertiaryContainer = LightTertiaryContainer,
-    onTertiaryContainer = LightOnTertiaryContainer,
+    tertiary = NeonGreen,
+    onTertiary = PureWhite,
+    tertiaryContainer = VeryLightGreen,
+    onTertiaryContainer = ForestGreen,
 
-    background = LightBackground,
-    onBackground = LightOnBackground,
+    background = SoftWhite,
+    onBackground = CharcoalBlack,
 
-    surface = LightSurface,
-    onSurface = LightOnSurface,
-    surfaceVariant = LightSurfaceVariant,
-    onSurfaceVariant = LightOnSurfaceVariant,
+    surface = PureWhite,
+    onSurface = CharcoalBlack,
+    surfaceVariant = LightGray,
+    onSurfaceVariant = DarkGray,
 
-    error = LightError,
-    onError = LightOnError,
-    errorContainer = LightErrorContainer,
-    onErrorContainer = LightOnErrorContainer,
+    error = ErrorRed,
+    onError = PureWhite,
+    errorContainer = VeryLightRed,
+    onErrorContainer = DarkRed,
 
-    outline = LightOutline,
+    outline = MediumGray,
     outlineVariant = LightOutlineVariant,
 
-    surfaceTint = LightPrimary,
+    surfaceTint = ElectricBlue,
     inverseSurface = CharcoalBlack,
     inverseOnSurface = SoftWhite,
     inversePrimary = DarkPrimary
@@ -84,7 +83,7 @@ private val DarkColorScheme = darkColorScheme(
     surfaceTint = DarkPrimary,
     inverseSurface = SoftWhite,
     inverseOnSurface = CharcoalBlack,
-    inversePrimary = LightPrimary
+    inversePrimary = ElectricBlue
 )
 
 @Composable

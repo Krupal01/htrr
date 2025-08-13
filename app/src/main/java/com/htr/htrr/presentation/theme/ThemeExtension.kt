@@ -13,16 +13,16 @@ val typography: Typography
     @Composable get() = MaterialTheme.typography
 
 val ColorScheme.accent: Color
-    @Composable get() = if (isSystemInDarkTheme()) AccentGradientStart else AccentGradientEnd
+    @Composable get() = if (isSystemInDarkTheme()) SunsetOrange else CoralPink
 
 val ColorScheme.highlight: Color
-    @Composable get() = HighlightColor
+    @Composable get() = RoyalGold
 
 val ColorScheme.success: Color
-    @Composable get() = SuccessColor
+    @Composable get() = NeonGreen
 
 val ColorScheme.warning: Color
-    @Composable get() = WarningColor
+    @Composable get() = AmberGlow
 
 // Custom gradient colors
 @Composable
@@ -30,6 +30,6 @@ fun getGradientColors(): List<Color> {
     return if (isSystemInDarkTheme()) {
         listOf(DarkPrimary, DarkSecondary, DarkTertiary)
     } else {
-        listOf(LightPrimary, LightSecondary, LightTertiary)
+        listOf(ElectricBlue, CyberPurple, NeonGreen)
     }
 }

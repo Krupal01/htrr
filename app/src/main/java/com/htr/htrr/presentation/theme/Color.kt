@@ -22,37 +22,14 @@ val LightGray = Color(0xFFF3F4F6)
 val MediumGray = Color(0xFF9CA3AF)
 val DarkGray = Color(0xFF374151)
 val CharcoalBlack = Color(0xFF111827)
-val DeepBlack = Color(0xFF000000)
+val VeryLightBlue = Color(0xFFE0F2FE)
+val VeryLightPurple = Color(0xFFF3E8FF)
+val VeryLightGreen = Color(0xFFD1FAE5)
 
-// Light Theme Colors
-val LightPrimary = ElectricBlue
-val LightOnPrimary = PureWhite
-val LightPrimaryContainer = Color(0xFFE0F2FE)
-val LightOnPrimaryContainer = DeepBlue
+val ErrorRed = Color(0xFFDC2626)
+val VeryLightRed = Color(0xFFFEE2E2)
+val DarkRed = Color(0xFF991B1B)
 
-val LightSecondary = CyberPurple
-val LightOnSecondary = PureWhite
-val LightSecondaryContainer = Color(0xFFF3E8FF)
-val LightOnSecondaryContainer = DeepPurple
-
-val LightTertiary = NeonGreen
-val LightOnTertiary = PureWhite
-val LightTertiaryContainer = Color(0xFFD1FAE5)
-val LightOnTertiaryContainer = ForestGreen
-
-val LightBackground = SoftWhite
-val LightOnBackground = CharcoalBlack
-val LightSurface = PureWhite
-val LightOnSurface = CharcoalBlack
-val LightSurfaceVariant = LightGray
-val LightOnSurfaceVariant = DarkGray
-
-val LightError = Color(0xFFDC2626)
-val LightOnError = PureWhite
-val LightErrorContainer = Color(0xFFFEE2E2)
-val LightOnErrorContainer = Color(0xFF991B1B)
-
-val LightOutline = MediumGray
 val LightOutlineVariant = Color(0xFFE5E7EB)
 
 // Dark Theme Colors
@@ -85,10 +62,3 @@ val DarkOnErrorContainer = Color(0xFFFEE2E2)
 
 val DarkOutline = Color(0xFF64748B)
 val DarkOutlineVariant = Color(0xFF475569)
-
-// Accent Colors for Special Elements
-val AccentGradientStart = SunsetOrange
-val AccentGradientEnd = CoralPink
-val HighlightColor = RoyalGold
-val SuccessColor = NeonGreen
-val WarningColor = AmberGlow

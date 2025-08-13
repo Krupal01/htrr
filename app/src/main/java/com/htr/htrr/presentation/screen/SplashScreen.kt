@@ -27,6 +27,7 @@ import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.CircularProgressIndicator
 import androidx.compose.material3.Icon
+import androidx.compose.material3.MaterialTheme.colorScheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
@@ -46,7 +47,6 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.htr.htrr.presentation.theme.colorScheme
 import com.htr.htrr.presentation.theme.getGradientColors
 import com.htr.htrr.presentation.theme.typography
 import kotlinx.coroutines.delay
@@ -68,10 +68,10 @@ fun SplashScreen(
     }
 
     // Auto navigate after delay (optional)
-    LaunchedEffect(Unit) {
-        delay(3000) // 3 seconds
-        onNavigateToMain()
-    }
+//    LaunchedEffect(Unit) {
+//        delay(3000) // 3 seconds
+//        onNavigateToMain()
+//    }
 
     val gradientColors = getGradientColors()
 
@@ -166,7 +166,7 @@ fun SplashScreen(
             modifier = Modifier.padding(horizontal = 32.dp)
         ) {
             // App Icon or Logo placeholder
-            Box(
+            /*Box(
                 modifier = Modifier
                     .size(120.dp)
                     .scale(titleScale)
@@ -188,10 +188,9 @@ fun SplashScreen(
                     modifier = Modifier.size(60.dp),
                     tint = colorScheme.onBackground
                 )
-            }
+            }*/
 
             Spacer(modifier = Modifier.height(32.dp))
-
             // App Title
             Text(
                 text = "MyAwesome App", // Replace with your app name
@@ -200,7 +199,7 @@ fun SplashScreen(
                     fontWeight = FontWeight.Bold,
                     letterSpacing = (-0.5).sp
                 ),
-                color = colorScheme.onBackground,
+                color = colorScheme.onPrimaryContainer,
                 textAlign = TextAlign.Center,
                 modifier = Modifier
                     .alpha(titleAlpha)
@@ -217,7 +216,7 @@ fun SplashScreen(
                     fontWeight = FontWeight.Medium,
                     letterSpacing = 0.5.sp
                 ),
-                color = colorScheme.onBackground.copy(alpha = 0.8f),
+                color = colorScheme.onPrimaryContainer.copy(alpha = 0.8f),
                 textAlign = TextAlign.Center,
                 modifier = Modifier
                     .alpha(subtitleAlpha)
@@ -238,7 +237,7 @@ fun SplashScreen(
             ) {
                 CircularProgressIndicator(
                     modifier = Modifier.size(32.dp),
-                    color = colorScheme.onBackground.copy(alpha = 0.6f),
+                    color = colorScheme.onPrimaryContainer.copy(alpha = 0.6f),
                     strokeWidth = 3.dp
                 )
             }
@@ -261,7 +260,7 @@ fun SplashScreen(
             Text(
                 text = "Version 1.0.0", // Replace with actual version
                 style = typography.bodySmall,
-                color = colorScheme.onBackground.copy(alpha = 0.6f)
+                color = colorScheme.onPrimaryContainer.copy(alpha = 0.6f)
             )
         }
     }

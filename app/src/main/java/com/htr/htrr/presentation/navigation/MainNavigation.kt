@@ -9,6 +9,7 @@ import androidx.navigation.navArgument
 import com.htr.htrr.presentation.screen.DetailScreen
 import com.htr.htrr.presentation.screen.HomeScreen
 import com.htr.htrr.presentation.screen.SplashScreen
+import com.htr.htrr.presentation.theme.HtrrTheme
 
 @Composable
 fun MainNavigation() {

@@ -5,6 +5,7 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import com.htr.htrr.presentation.navigation.MainNavigation
+import com.htr.htrr.presentation.theme.CompleteRGBTest
 import com.htr.htrr.presentation.theme.HtrrTheme
 import dagger.hilt.android.AndroidEntryPoint
 
@@ -14,9 +15,10 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
-            HtrrTheme {
-                MainNavigation()
-            }
+//            HtrrTheme {
+//                MainNavigation()
+//            }
+            CompleteRGBTest()
         }
     }
 }
